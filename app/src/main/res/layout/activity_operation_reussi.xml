@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.OperationReussi">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_gravity="center" android:layout_marginTop="150dp"
+                android:layout_marginBottom="140dp">
+            <TextView
+                    android:text="Enregistrement du rendez-vous réussi !"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_gravity="center"
+                    android:gravity="center" android:layout_marginTop="50dp" android:textStyle="bold"
+                    android:textColor="#66A3D3" android:textSize="25sp"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/gsb" android:id="@+id/imageView2"
+                    android:layout_marginBottom="80dp" android:layout_marginTop="20dp"/>
+            <Button
+                    android:text="Revenir à l'accueil de l'application"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/RevenirAccueil" android:gravity="center"
+                    android:layout_gravity="center" android:layout_marginTop="-40dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

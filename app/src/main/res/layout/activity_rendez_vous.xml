@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.RendezVousActivity">
+
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E9EFF4F4"
+                    android:gravity="center"
+                    android:text="Vos rendez-vous"
+                    android:textSize="25sp" android:textColor="#66A3D3" android:layout_marginTop="10dp"/>
+
+            <ListView
+                    android:id="@+id/listRendezVous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp" android:visibility="visible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- Intégration de la Toolbar -->
+        <include
+                layout="@layout/toolbar">
+        </include>
+
+        <!-- Intégration de la BottomNavigation -->
+        <include
+                layout="@layout/bottomnavigation"
+        />
+
+        <!-- Integration du floating action button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_control_point_24"
+                android:id="@+id/fabAjouter"
+                android:focusable="true"
+                android:tint="@color/button_add"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+        />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

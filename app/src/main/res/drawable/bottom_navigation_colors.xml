@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Afin de pouvoir définir quelle couleur sera utilisée en fonction de la situation rencontrée, il faut créer ce fichier-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:state_checked="true"
+            android:color="@color/selected_icon" />
+
+    <item
+            android:state_checked="false"
+            android:color="@color/text_normal" />
+
+</selector>

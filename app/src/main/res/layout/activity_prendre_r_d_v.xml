@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.PrendreRDV">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/textViewAfficheDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/button"
+                android:layout_marginBottom="28dp"
+                android:text="Choisissez une date"
+                android:textSize="30sp" android:textColor="#66A3D3" android:layout_gravity="center"
+                android:layout_marginTop="100dp"/>
+        <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selectionner une date" android:gravity="center|center_horizontal|center_vertical"
+                android:layout_gravity="center" android:backgroundTint="#00BCD4"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/textViewAfficheHeure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/buttonhr"
+                android:layout_marginBottom="28dp"
+                android:text="Selectionner une heure"
+                android:textSize="30sp" android:textColor="#66A3D3" android:layout_gravity="center"
+                android:layout_marginTop="300dp" android:gravity="center"/>
+        <Button
+                android:id="@+id/buttonhr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selectionner une heure" android:gravity="center|center_horizontal|center_vertical"
+                android:layout_gravity="center" android:backgroundTint="#00BCD4"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:text="Valider la prise du rendez-vous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/buttonvaliderdv" android:gravity="center"
+                android:layout_gravity="center" android:layout_marginTop="550dp" android:backgroundTint="#8BC34A"/>
+    </LinearLayout>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="#004CAF50">
+
+        <!-- Intégration de la Toolbar -->
+        <include
+                layout="@layout/toolbar">
+        </include>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

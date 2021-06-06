@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Profil">
+
+    <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/top"
+            app:layout_constraintBottom_toTopOf="@id/bottom"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        <TextView
+                android:text="Changer votre mot de passe."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView3" android:gravity="center"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_marginTop="60dp"
+                android:hint="Taper votre mot de passe actuelle"
+                android:ems="10"
+                android:id="@+id/mdpactuel" android:gravity="center"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_marginTop="60dp"
+                android:hint="Nouveau mot de passe"
+                android:ems="10"
+                android:id="@+id/nouveaumdp" android:gravity="center"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnvalidermdp"
+                android:text="Valider les modifications"
+                android:layout_marginTop="40dp">
+        </Button>
+    </LinearLayout>
+    <FrameLayout
+            android:id="@+id/top"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar"></include>
+
+        <!-- Intégration de la BottomNavigation -->
+    </FrameLayout>
+    <FrameLayout
+            android:id="@+id/bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Intégration de la BottomNavigation -->
+        <include layout="@layout/bottomnavigation"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
